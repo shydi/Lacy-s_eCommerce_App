@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lacy\'s </string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="mensclothing">Mens</string>
+    <string name="womensclothing">Womens</string>
+    <string name="kidsclothing">Kids</string>
+    <string name="browse">Browse</string>
+    <string name="login">Login</string>
+    <string name="cart">Cart</string>
+    <string name="back">Return</string>
+    <string name="background">background</string>
+
+    <string name="title_activity_clothing">clothing</string>
+    <string name="title_activity_mensclothing">mensclothing</string>
+    <string name="title_activity_mainprogram">main</string>
+
+    <string name="hoodie">hoodie</string>
+    <string name="suit">suit</string>
+
+    <string name="menssuit">Mens Suit - 109$</string>
+    <string name="menshoodie">Mens Hoodie - 38$</string>
+    <string name="mensjeans">Mens Jeans - 55$</string>
+    <string name="mensblazer">Mens Blazer - 41$</string>
+    <string name="mensshirt">Mens Stripped Shirt - 29$</string>
+    <string name="wdress">Black Dress -  55$</string>
+    <string name="wsummerdress">Summer Dress - 60$</string>
+    <string name="wpants">Designer Pants - 75$</string>
+    <string name="wtanktop">Designer Tanktop - 40$</string>
+    <string name="wtshirt">Designer T-Shirt - 34$</string>
+    <string name="kittydress">Hello Kitty Dress - 28$</string>
+    <string name="kittyhoodie">Hello Kitty Hoodie - 35$</string>
+    <string name="konesie">Toddler Onesie - 24$</string>
+    <string name="kshirt">Boys Plaid Shirt - 28$</string>
+    <string name="kpajama">Ninja Turtle Pajamas - 20$</string>
+
+    <string name="cartcaps">CART</string>
+    <string name="review">REVIEW</string>
+    <string name="clothescaps">CLOTHES</string>
+    <string name="logincaps">LOGIN</string>
+    <string name="mens">Catalog</string>
+    <string name="addcart">Add To Cart</string>
+
+    <string name="title_activity_womensclothing">Womens Clothing</string>
+    <string name="title_activity_kidsclothing">Kids Clothing</string>
+    <string name="title_activity_mdesignerhoodier">Review</string>
+
+    <string name="cartbutton">cart button</string>
+    <string name="kidsbutton">Return</string>
+    <string name="mensbutton">Return</string>
+    <string name="womensbutton">Return</string>
+
+    <string name="reviewdefaulttext">Start typing review here...</string>
+    <string name="submit">Submit</string>
+    <string name="Reviews">Reviews</string>
+
+    <string name="mhoodiereview">Mens Designer Hoodie Review</string>
+    <string name="mjeansreview">Mens Jeans Review</string>
+    <string name="mblazerreview">Mens Blazer Review</string>
+    <string name="mstripedreview">Mens Striped Shirt Review</string>
+    <string name="msuitreview">Mens Suit Review</string>
+    <string name="kittydressr">Hello Kitty Dress Review</string>
+    <string name="kittyhoodier">Hello Kitty Hoodie Review</string>
+    <string name="konesier">Toddler Onesie Review</string>
+    <string name="kshirtr">Boys Plaid Shirt Review</string>
+    <string name="kpajamar">Ninja Turtle Pajamas Review</string>
+    <string name="wdressr">Black Dress Review</string>
+    <string name="wsummerdressr">Summer Dress Review</string>
+    <string name="wpantsr">Designer Pants Review</string>
+    <string name="wtanktopr">Designer Tanktop Review</string>
+    <string name="wtshirtr">Designer T-Shirt Review</string>
+    <string name="title_activity_mjeansr">mjeansr</string>
+    <string name="title_activity_mblazerr">mblazerr</string>
+    <string name="title_activity_mstripedr">mstripedr</string>
+    <string name="title_activity_msuitr">msuitr</string>
+    <string name="title_activity_kittydressr">kittydressr</string>
+    <string name="title_activity_kittyhoodier">kittyhoodier</string>
+    <string name="title_activity_konesier">konesier</string>
+    <string name="title_activity_kshirtr">kshirtr</string>
+    <string name="title_activity_kpajamar">kpajamar</string>
+    <string name="title_activity_wdressr">wdressr</string>
+    <string name="title_activity_wsummerdressr">wsummerdressr</string>
+    <string name="title_activity_wpantsr">wpantsr</string>
+    <string name="title_activity_wtanktopr">wtanktopr</string>
+    <string name="title_activity_wtshirtr">wtshirtr</string>
+    <string name="title_activity_log_in">LogIn</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="treview">Start typing review...</string>
+
+    <string name="tfuser">Username...</string>
+    <string name="tfpass">Password...</string>
+
+
+
+</resources>

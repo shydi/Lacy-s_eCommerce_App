@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="estore.lacys.com.lacysestore.clothing">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:text="@string/mensclothing"
+        android:id="@+id/mens"
+        android:bottomRightRadius="20dp"
+        android:bottomLeftRadius="20dp"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical|right"
+        android:textSize="45sp"
+        android:background="#96ffffff"
+        android:textColor="#222"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:text="@string/womensclothing"
+        android:id="@+id/womens"
+        android:bottomRightRadius="20dp"
+        android:bottomLeftRadius="20dp"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp"
+        android:layout_below="@+id/mens"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical|left"
+        android:textSize="45sp"
+        android:background="#96ffffff"
+        android:textColor="#222"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:text="@string/kidsclothing"
+        android:id="@+id/kids"
+        android:bottomRightRadius="20dp"
+        android:bottomLeftRadius="20dp"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp"
+        android:layout_below="@+id/womens"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical|right"
+        android:textSize="45sp"
+        android:background="#96ffffff"
+        android:textColor="#222"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="estore.lacys.com.lacysestore" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/shoping_cart"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LacysEstore"
+            android:label="@string/app_name"
+            android:theme="@style/splashScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mainpage"
+            android:label="@string/title_activity_mainprogram" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.mainpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".clothing"
+            android:label="@string/title_activity_clothing" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.clothing" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mensclothing"
+            android:label="@string/title_activity_mensclothing" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.mensclothing" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".womensclothing"
+            android:label="@string/title_activity_womensclothing" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.womensclothing" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kidsclothing"
+            android:label="@string/title_activity_kidsclothing" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.kidsclothing" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mdesignerhoodier"
+            android:label="@string/title_activity_mdesignerhoodier" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.mdesignerhoodier" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mjeansr"
+            android:label="@string/title_activity_mjeansr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.mjeansr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mblazerr"
+            android:label="@string/title_activity_mblazerr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.mblazerr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mstripedr"
+            android:label="@string/title_activity_mstripedr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.mstripedr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".msuitr"
+            android:label="@string/title_activity_msuitr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.msuitr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kittydressr"
+            android:label="@string/title_activity_kittydressr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.kittydressr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kittyhoodier"
+            android:label="@string/title_activity_kittyhoodier" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.kittyhoodier" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".konesier"
+            android:label="@string/title_activity_konesier" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.konesier" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kshirtr"
+            android:label="@string/title_activity_kshirtr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.kshirtr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kpajamar"
+            android:label="@string/title_activity_kpajamar" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.kpajamar" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wdressr"
+            android:label="@string/title_activity_wdressr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.wdressr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wsummerdressr"
+            android:label="@string/title_activity_wsummerdressr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.wsummerdressr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wpantsr"
+            android:label="@string/title_activity_wpantsr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.wpantsr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wtanktopr"
+            android:label="@string/title_activity_wtanktopr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.wtanktopr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wtshirtr"
+            android:label="@string/title_activity_wtshirtr" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.wtshirtr" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogIn"
+            android:label="@string/title_activity_log_in" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.LogIn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.SignUp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

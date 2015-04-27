@@ -1,0 +1,274 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="estore.lacys.com.lacysestore.womensclothing">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menubar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/scrollView">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kidsbutton"
+            android:id="@+id/wclothesreturn"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart"
+            android:id="@+id/mbutton2"
+            android:enabled="false"
+            android:layout_gravity="top"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ff979797"
+            android:background="#78e7e7e7"
+            android:clickable="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:id="@+id/mLogin"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/mens1"
+                android:background="@drawable/wfluffydress"
+                android:layout_gravity="center"
+                android:contentDescription="@string/wdress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wdress"
+                android:id="@+id/men1text"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.30">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review"
+                    android:id="@+id/m1review"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cartcaps"
+                    android:id="@+id/m1cart"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="90dp" />
+            </LinearLayout>
+            //Next Item
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/mens2"
+                android:background="@drawable/wsequinpants"
+                android:layout_gravity="center"
+                android:contentDescription="@string/wpants" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wpants"
+                android:id="@+id/men2text"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.30">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review"
+                    android:id="@+id/m2review"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cartcaps"
+                    android:id="@+id/m2cart"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="90dp" />
+
+            </LinearLayout>
+
+            //Next Item
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/mens3"
+                android:background="@drawable/wsummerdress"
+                android:layout_gravity="center"
+                android:contentDescription="@string/wsummerdress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wsummerdress"
+                android:id="@+id/men3text"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.30">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review"
+                    android:id="@+id/m3review"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cartcaps"
+                    android:id="@+id/m3cart"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="90dp" />
+
+            </LinearLayout>
+
+            //Next Item
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/mens4"
+                android:background="@drawable/wtanktop"
+                android:layout_gravity="center"
+                android:contentDescription="@string/wtanktop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wtanktop"
+                android:id="@+id/men4text"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.30">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review"
+                    android:id="@+id/m4review"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cartcaps"
+                    android:id="@+id/m4cart"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="90dp" />
+
+            </LinearLayout>
+
+            //Next Item
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/mens5"
+                android:background="@drawable/wtshirt"
+                android:layout_gravity="center"
+                android:contentDescription="@string/wtshirt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wtshirt"
+                android:id="@+id/men5text"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.30">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review"
+                    android:id="@+id/m5review"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cartcaps"
+                    android:id="@+id/m5cart"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="90dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
