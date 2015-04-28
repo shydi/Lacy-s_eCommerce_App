@@ -1,6 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".LacysEstore">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="estore.lacys.com.lacysestore.mainpage">
     <item
         android:id="@+id/action_rate"
         android:title="@string/rateus"

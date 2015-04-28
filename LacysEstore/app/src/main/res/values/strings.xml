@@ -93,6 +93,11 @@
 
     <string name="tfuser">Username...</string>
     <string name="tfpass">Password...</string>
+    <string name="title_activity_survey">survey</string>
+    <string name="rateus">Rate us</string>
+    <string name="rate_radiotext">What did you use this app for primarily?</string>
+    <string name="rate_experiencetext">How was your experience using our app?</string>
+
 
 
 
