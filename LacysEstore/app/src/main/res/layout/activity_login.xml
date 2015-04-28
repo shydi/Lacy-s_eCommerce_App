@@ -11,20 +11,20 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/TFusername"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="@string/tfuser"/>
+        android:hint="@string/tfuser"
+        android:layout_above="@+id/TFpassword"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Log In"
         android:id="@+id/Blogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-        android:layout_below="@+id/textView4"
-        android:onClick="onButtonClick" />
+        android:onClick="onButtonClick"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -32,18 +32,18 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/TFpassword"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="@string/tfpass"/>
+        android:hint="@string/tfpass"
+        android:layout_above="@+id/Blogin"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up Here"
         android:id="@+id/Bsignup"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="onButtonClick" />
+        android:onClick="onButtonClick"
+        android:layout_below="@+id/Blogin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

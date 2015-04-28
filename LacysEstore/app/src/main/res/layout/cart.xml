@@ -13,13 +13,9 @@
         android:choiceMode="multipleChoice">
 
     </ListView>
-    //test line. Checking merges
         <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/ButtonRemoveFromCart"
             android:text="Remove from Cart"/>
         <Button android:id="@+id/Button02" android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:text="Proceed to Checkout"/>
     </LinearLayout>
-
-
-</LinearLayout>
