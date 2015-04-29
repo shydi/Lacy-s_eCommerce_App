@@ -1,13 +1,18 @@
 package estore.lacys.com.lacysestore.checkout;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import estore.lacys.com.lacysestore.R;
 
 public class confirmation extends ActionBarActivity {
+    private Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +45,15 @@ public class confirmation extends ActionBarActivity {
 
     public void OnClickListener()
     {
-        
+        home = (Button)findViewById(R.id.home);
+        home.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.mainpage");
+                        startActivity(intent);
+                    }
+                }
+        );
     }
 }

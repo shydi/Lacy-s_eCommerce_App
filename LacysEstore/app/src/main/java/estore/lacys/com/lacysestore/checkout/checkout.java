@@ -1,14 +1,19 @@
 package estore.lacys.com.lacysestore.checkout;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import estore.lacys.com.lacysestore.R;
 
 public class checkout extends ActionBarActivity {
 
+    private Button bttn_confirmation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +30,16 @@ public class checkout extends ActionBarActivity {
 
     public void OnClickListener()
     {
+        bttn_confirmation = (Button) findViewById(R.id.sbmButton);
+        bttn_confirmation.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.checkout.confirmation");
+                        startActivity(intent);
+                    }
+                }
+        );
 
     }
 
