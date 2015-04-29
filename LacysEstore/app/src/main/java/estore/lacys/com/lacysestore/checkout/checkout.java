@@ -28,6 +28,7 @@ public class checkout extends ActionBarActivity {
         return true;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     public void OnClickListener()
     {
         bttn_confirmation = (Button) findViewById(R.id.sbmButton);
@@ -43,6 +44,8 @@ public class checkout extends ActionBarActivity {
 
     }
 
+=======
+>>>>>>> parent of 41be9b6... Confirm and Checkout in progress
 =======
 >>>>>>> parent of 41be9b6... Confirm and Checkout in progress
 
