@@ -7,25 +7,20 @@ import android.view.MenuItem;
 
 import estore.lacys.com.lacysestore.R;
 
-public class checkout extends ActionBarActivity {
+public class confirmation extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_checkout);
+        setContentView(R.layout.activity_confirmation);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_checkout, menu);
+        getMenuInflater().inflate(R.menu.menu_confirmation, menu);
         return true;
-    }
-
-    public void OnClickListener()
-    {
-
     }
 
     @Override
@@ -41,5 +36,10 @@ public class checkout extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void OnClickListener()
+    {
+        
     }
 }
