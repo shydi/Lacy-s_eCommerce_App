@@ -90,6 +90,13 @@ public class LacysEstore extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        if(id == R.id.action_settings)
+        {
+            Intent intent = new Intent(LacysEstore.this, AccountSettings.class);
+
+            startActivity(intent);
+        }
+
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_rate)
         {

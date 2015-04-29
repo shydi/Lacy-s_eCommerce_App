@@ -50,13 +50,14 @@ public class LogIn extends ActionBarActivity
             String password = helper.searchPass(str);
             if(pass.equals(password))
             {
+                Toast in = Toast.makeText(LogIn.this, "Hi " + str, Toast.LENGTH_SHORT);
+                in.show();
 
               Intent i = new Intent(LogIn.this, LacysEstore.class);
                i.putExtra("Username", str);
                startActivity(i);
-                //Intent i = new Intent(LogIn.this, LacysEstore.class);
-                // getActionBar().setTitle(str);
-                startActivity(i);
+
+
             }
             else
             {

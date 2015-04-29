@@ -12,4 +12,12 @@
         android:title="App Survey"
         android:orderInCategory="80"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Account Settings"
+        android:orderInCategory="70"
+        app:showAsAction="never"/>
+
 </menu>
+

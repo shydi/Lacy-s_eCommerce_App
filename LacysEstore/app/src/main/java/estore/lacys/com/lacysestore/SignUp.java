@@ -45,13 +45,16 @@ public class SignUp extends Activity
                 Toast pass = Toast.makeText(SignUp.this, "Passwords don't match!", Toast.LENGTH_SHORT);
                 pass.show();
             }
-            else if(pass1str.isEmpty() || pass2str.isEmpty())
+            else if(namestr.isEmpty() || emailstr.isEmpty() || unamestr.isEmpty() ||pass1str.isEmpty() || pass2str.isEmpty())
             {
-                Toast pass = Toast.makeText(SignUp.this, "Please enter password", Toast.LENGTH_SHORT);
+                Toast pass = Toast.makeText(SignUp.this, "Please enter missing information", Toast.LENGTH_SHORT);
                 pass.show();
             }
             else
             {
+                Toast success = Toast.makeText(SignUp.this, "Welcome to the Lacy's family", Toast.LENGTH_SHORT);
+                success.show();
+
                 //insert the detailes in database
                 Contact c = new Contact();
                 c.setName(namestr);
