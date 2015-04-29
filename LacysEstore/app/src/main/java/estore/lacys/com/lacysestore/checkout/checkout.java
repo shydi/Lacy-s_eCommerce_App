@@ -27,6 +27,7 @@ public class checkout extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_checkout, menu);
         return true;
     }
+<<<<<<< HEAD
     public void OnClickListener()
     {
         bttn_confirmation = (Button) findViewById(R.id.sbmButton);
@@ -42,6 +43,8 @@ public class checkout extends ActionBarActivity {
 
     }
 
+=======
+>>>>>>> parent of 41be9b6... Confirm and Checkout in progress
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

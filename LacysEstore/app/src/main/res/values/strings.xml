@@ -15,11 +15,14 @@
     <string name="back">Return</string>
     <string name="background">background</string>
 
+<<<<<<< HEAD
     <string name="confirm">Your order has been received and is being prepped for shipping. You will
     receive a confirmation email from us with further details on the order. \n\nThanks for shopping at
     Lacy\'s!</string>
     <string name="price">Total price: </string>
 
+=======
+>>>>>>> parent of 41be9b6... Confirm and Checkout in progress
 =======
 >>>>>>> parent of 41be9b6... Confirm and Checkout in progress
     <string name="title_activity_clothing">clothing</string>
