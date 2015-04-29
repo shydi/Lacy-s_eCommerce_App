@@ -36,10 +36,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".mensclothing"
-            android:label="@string/title_activity_mensclothing" >
+            android:name=".clothes.mensCatalog"
+            android:label="@string/mclothing" >
             <intent-filter>
-                <action android:name="estore.lacys.com.lacysestore.mensclothing" />
+                <action android:name="estore.lacys.com.lacysestore.clothes.mensCatalog" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

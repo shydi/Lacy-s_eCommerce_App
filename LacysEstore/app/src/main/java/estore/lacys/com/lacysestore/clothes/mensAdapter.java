@@ -48,13 +48,19 @@ public class mensAdapter extends ArrayAdapter<Catalog>
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.item, parent, false);
             viewHolder.name = (TextView) convertView.findViewById(R.id.itemTitleView);
+            viewHolder.price = (TextView) convertView.findViewById(R.id.priceView);
+            viewHolder.tbn = (ImageView) convertView.findViewById(R.id.itemImageView);
+
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         // Populate the data into the template view using the data object
+        String textPrice = Double.toString(item.price);
         viewHolder.name.setText(item.title);
-        viewHolder.desc.setText(item.description);
+        viewHolder.price.setText(textPrice);
+        viewHolder.tbn.setImageDrawable(item.productImage);
+
         // Return the completed view to render on screen
         return convertView;
     }

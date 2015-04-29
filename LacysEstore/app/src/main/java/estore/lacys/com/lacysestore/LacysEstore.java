@@ -36,7 +36,7 @@ public class LacysEstore extends ActionBarActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.mensclothing");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.clothes.mensCatalog");
                         startActivity(intent);
                     }
                 }
