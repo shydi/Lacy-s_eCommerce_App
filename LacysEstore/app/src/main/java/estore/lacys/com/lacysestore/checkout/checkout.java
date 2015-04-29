@@ -27,7 +27,6 @@ public class checkout extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_checkout, menu);
         return true;
     }
-
     public void OnClickListener()
     {
         bttn_confirmation = (Button) findViewById(R.id.sbmButton);
@@ -42,6 +41,7 @@ public class checkout extends ActionBarActivity {
         );
 
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

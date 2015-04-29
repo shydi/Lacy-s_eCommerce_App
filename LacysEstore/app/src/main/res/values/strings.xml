@@ -20,6 +20,8 @@
     Lacy\'s!</string>
     <string name="price">Total price: </string>
 
+=======
+>>>>>>> parent of 41be9b6... Confirm and Checkout in progress
     <string name="title_activity_clothing">clothing</string>
     <string name="title_activity_mensclothing">Men\'s Clothing</string>
     <string name="mclothing">Men\'s Clothing</string>
@@ -106,7 +108,6 @@
     <string name="rate_radiotext">What did you use this app for primarily?</string>
     <string name="rate_experiencetext">How was your experience using our app?</string>
     <string name="title_activity_checkout">checkout</string>
-    <string name="title_activity_confirmation">confirmation</string>
 
 
 

@@ -101,6 +101,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".checkout.checkout"
             android:label="Order Checkout" >
@@ -275,10 +276,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".checkout.confirmation"
-            android:label="@string/title_activity_confirmation" >
-        </activity>
+
     </application>
 
 </manifest>
