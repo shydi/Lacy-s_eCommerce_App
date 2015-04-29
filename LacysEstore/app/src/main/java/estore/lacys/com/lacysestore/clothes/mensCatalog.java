@@ -26,6 +26,7 @@ import estore.lacys.com.lacysestore.clothes.Catalog;
 public class mensCatalog extends Activity
 {
     private LacysEstore context;
+    private List<Catalog> mProducts;
 
     /*private List<Catalog> mProductList;
      */
@@ -36,13 +37,10 @@ public class mensCatalog extends Activity
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.catalog);
-        List <Catalog>products = mensHelper.getCatalog(getResources());
-
-
-        mensAdapter adapter = new mensAdapter(context, products);
+        mProducts = mensHelper.getCatalog(getResources());
 
         ListView listViewCatalog = (ListView) findViewById(R.id.ListViewCatalog);
-        listViewCatalog.setAdapter(adapter);
+        listViewCatalog.setAdapter(new mensAdapter(mProducts, getLayoutInflater(), false));
     }
 
 

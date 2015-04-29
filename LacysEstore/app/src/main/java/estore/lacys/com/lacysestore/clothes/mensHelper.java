@@ -40,4 +40,12 @@ public class mensHelper
 
         return catalog;
     }
+
+    public static List<Catalog> getCart() {
+        if(cart == null) {
+            cart = new Vector<Catalog>();
+        }
+
+        return cart;
+    }
 }
