@@ -56,12 +56,13 @@ public class LogIn extends ActionBarActivity
                startActivity(i);
                 //Intent i = new Intent(LogIn.this, LacysEstore.class);
                 // getActionBar().setTitle(str);
-                startActivity(i);
+               startActivity(i);
             }
             else
             {
                 //popup msg
-                Toast temp = Toast.makeText(LogIn.this, "Username and password don't match!", Toast.LENGTH_SHORT);
+                Toast temp = Toast.makeText(LogIn.this, "Invalid Username and Password. Please" +
+                        " try again.", Toast.LENGTH_SHORT);
                 temp.show();
             }
 

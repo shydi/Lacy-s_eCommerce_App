@@ -1,4 +1,4 @@
-package estore.lacys.com.lacysestore;
+package estore.lacys.com.lacysestore.reviews;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -22,6 +22,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+
+import estore.lacys.com.lacysestore.R;
 
 
 public class konesier extends ActionBarActivity {

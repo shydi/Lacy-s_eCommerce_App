@@ -1,4 +1,4 @@
-package estore.lacys.com.lacysestore;
+package estore.lacys.com.lacysestore.reviews;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -23,8 +23,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+import estore.lacys.com.lacysestore.R;
 
-public class kshirtr extends ActionBarActivity {
+
+public class kittyhoodier extends ActionBarActivity {
     private EditText txtEditor;
     private String output, txtbox;
     private Button button_save;
@@ -33,7 +35,7 @@ public class kshirtr extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kshirtr);
+        setContentView(R.layout.activity_kittyhoodier);
         OnClickButtonListener();
         readFromFile("");
         /*txtEditor.addTextChangedListener(new TextWatcher()
@@ -91,7 +93,7 @@ public class kshirtr extends ActionBarActivity {
     public void writeToFile(String data)
     {
         try {
-            OutputStreamWriter MyOutputStreamWriter = new OutputStreamWriter(openFileOutput("kshirtr.txt",MODE_APPEND | MODE_PRIVATE));
+            OutputStreamWriter MyOutputStreamWriter = new OutputStreamWriter(openFileOutput("kittyhoodier.txt",MODE_APPEND | MODE_PRIVATE));
             MyOutputStreamWriter.append("-" + data);
             MyOutputStreamWriter.close();
         }
@@ -104,7 +106,7 @@ public class kshirtr extends ActionBarActivity {
         String ret = "";
         if(path==""){
             try {
-                InputStream inputStream = openFileInput("kshirtr.txt");
+                InputStream inputStream = openFileInput("kittyhoodier.txt");
 
                 if ( inputStream != null ) {
                     InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
@@ -152,7 +154,7 @@ public class kshirtr extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_kshirtr, menu);
+        getMenuInflater().inflate(R.menu.menu_kittyhoodier, menu);
         return true;
     }
 

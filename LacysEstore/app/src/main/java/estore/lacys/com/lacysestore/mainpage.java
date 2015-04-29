@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 
 
 public class mainpage extends ActionBarActivity {
-    private static ImageButton button_mens, button_women, button_kids, button_login;
+    private static ImageButton button_mens, button_women, button_kids, button_login, cart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +22,23 @@ public class mainpage extends ActionBarActivity {
 
     public void OnClickButtonListener()
     {
+        cart = (ImageButton) findViewById(R.id.cart);
+        cart.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.clothes.CartActivity");
+                        startActivity(intent);
+                    }
+                }
+        );
+
         button_mens = (ImageButton)findViewById(R.id.mensbutton);
         button_mens.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.mensclothing");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.clothes.mensCatalog");
                         startActivity(intent);
                     }
                 }
@@ -49,7 +60,7 @@ public class mainpage extends ActionBarActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.kidsclothing");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.clothes.kidsCatalog");
                         startActivity(intent);
                     }
                 }

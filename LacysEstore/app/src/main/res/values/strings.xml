@@ -15,15 +15,21 @@
     <string name="back">Return</string>
     <string name="background">background</string>
 
+    <string name="confirm">Your order has been received and is being prepped for shipping. You will
+    receive a confirmation email from us with further details on the order. \n\nThanks for shopping at
+    Lacy's!</string>
+    <string name="price">Total price: </string>
+
     <string name="title_activity_clothing">clothing</string>
-    <string name="title_activity_mensclothing">mensclothing</string>
-    <string name="title_activity_mainprogram">main</string>
+    <string name="title_activity_mensclothing">Men\'s Clothing</string>
+    <string name="mclothing">Men\'s Clothing</string>
+    <string name="title_activity_mainprogram">Main Page</string>
 
     <string name="hoodie">hoodie</string>
     <string name="suit">suit</string>
 
     <string name="menssuit">Mens Suit - 109$</string>
-    <string name="menshoodie">Mens Hoodie - 38$</string>
+    <string name="menshoodie">Men\'s Hoodie - 38$</string>
     <string name="mensjeans">Mens Jeans - 55$</string>
     <string name="mensblazer">Mens Blazer - 41$</string>
     <string name="mensshirt">Mens Stripped Shirt - 29$</string>
@@ -73,30 +79,34 @@
     <string name="wpantsr">Designer Pants Review</string>
     <string name="wtanktopr">Designer Tanktop Review</string>
     <string name="wtshirtr">Designer T-Shirt Review</string>
-    <string name="title_activity_mjeansr">mjeansr</string>
-    <string name="title_activity_mblazerr">mblazerr</string>
-    <string name="title_activity_mstripedr">mstripedr</string>
-    <string name="title_activity_msuitr">msuitr</string>
-    <string name="title_activity_kittydressr">kittydressr</string>
-    <string name="title_activity_kittyhoodier">kittyhoodier</string>
-    <string name="title_activity_konesier">konesier</string>
-    <string name="title_activity_kshirtr">kshirtr</string>
-    <string name="title_activity_kpajamar">kpajamar</string>
-    <string name="title_activity_wdressr">wdressr</string>
-    <string name="title_activity_wsummerdressr">wsummerdressr</string>
-    <string name="title_activity_wpantsr">wpantsr</string>
-    <string name="title_activity_wtanktopr">wtanktopr</string>
-    <string name="title_activity_wtshirtr">wtshirtr</string>
-    <string name="title_activity_log_in">LogIn</string>
-    <string name="title_activity_sign_up">SignUp</string>
-    <string name="treview">Start typing review...</string>
+    <string name="title_activity_mjeansr">Men\'s Jeans Review</string>
+    <string name="title_activity_mblazerr">Men\'s Blazer Review</string>
+    <string name="title_activity_mstripedr">Men\'s Striped Shirt review</string>
+    <string name="title_activity_msuitr">Men\'s Suit Review</string>
+    <string name="title_activity_kittydressr">Kitty Dress Review</string>
+    <string name="title_activity_kittyhoodier">Kitty Hoodie Review</string>
+    <string name="title_activity_konesier">Kid\'s Onesie Review</string>
+    <string name="title_activity_kshirtr">Kid\'s Shirt Review</string>
+    <string name="title_activity_kpajamar">Kid\'s Pajama Review</string>
+    <string name="title_activity_wdressr">Women\'s Dress Review</string>
+    <string name="title_activity_wsummerdressr">Women\'s Summer Dress Review</string>
+    <string name="title_activity_wpantsr">Women\'s Pants Review</string>
+    <string name="title_activity_wtanktopr">Women\'s Tank Top Review</string>
+    <string name="title_activity_wtshirtr">Women\'s T-Shirt Review</string>
+    <string name="title_activity_log_in">Login</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="treview">Start typing review…</string>
+    <string name="Cart">Shopping Cart</string>
+    <string name="mcatalog">Men\'s Catalog</string>
 
-    <string name="tfuser">Username...</string>
-    <string name="tfpass">Password...</string>
-    <string name="title_activity_survey">survey</string>
-    <string name="rateus">Rate us</string>
+    <string name="tfuser">Username…</string>
+    <string name="tfpass">Password…</string>
+    <string name="title_activity_survey">App Survey</string>
+    <string name="rateus">Rate Us</string>
     <string name="rate_radiotext">What did you use this app for primarily?</string>
     <string name="rate_experiencetext">How was your experience using our app?</string>
+    <string name="title_activity_checkout">checkout</string>
+    <string name="title_activity_confirmation">confirmation</string>
 
 
 

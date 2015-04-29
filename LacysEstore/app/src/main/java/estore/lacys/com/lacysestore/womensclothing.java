@@ -47,7 +47,7 @@ public class womensclothing extends ActionBarActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.wdressr");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.wreviews.wdressr");
                         startActivity(intent);
                     }
                 }
@@ -58,7 +58,7 @@ public class womensclothing extends ActionBarActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.wpantsr");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.wreviews.wpantsr");
                         startActivity(intent);
                     }
                 }
@@ -69,7 +69,7 @@ public class womensclothing extends ActionBarActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.wsummerdressr");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.wreviews.wsummerdressr");
                         startActivity(intent);
                     }
                 }
@@ -80,7 +80,7 @@ public class womensclothing extends ActionBarActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.wtanktopr");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.wreviews.wtanktopr");
                         startActivity(intent);
                     }
                 }
@@ -91,7 +91,7 @@ public class womensclothing extends ActionBarActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.wtshirtr");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.wreviews.wtshirtr");
                         startActivity(intent);
                     }
                 }

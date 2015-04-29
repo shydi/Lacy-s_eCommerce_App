@@ -1,6 +1,7 @@
 package estore.lacys.com.lacysestore;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,10 +13,15 @@ import android.widget.TextView;
 
 
 import java.util.ArrayList;
+import java.util.List;
+
+import estore.lacys.com.lacysestore.clothes.Catalog;
 
 
 public class LacysEstore extends ActionBarActivity {
-    private static ImageButton button_mens, button_women, button_kids, button_login;
+    private static ImageButton button_mens, button_women, button_kids, button_login, cart;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +37,24 @@ public class LacysEstore extends ActionBarActivity {
 
     public void OnClickButtonListener()
     {
+
+        cart = (ImageButton) findViewById(R.id.cart);
+        cart.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.clothes.CartActivity");
+                        startActivity(intent);
+                    }
+                }
+        );
+
         button_mens = (ImageButton)findViewById(R.id.mensbutton);
         button_mens.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.mensclothing");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.clothes.mensCatalog");
                         startActivity(intent);
                     }
                 }
@@ -47,7 +65,7 @@ public class LacysEstore extends ActionBarActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.womensclothing");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.clothes.womensCatalog");
                         startActivity(intent);
                     }
                 }
@@ -58,7 +76,7 @@ public class LacysEstore extends ActionBarActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("estore.lacys.com.lacysestore.kidsclothing");
+                        Intent intent = new Intent("estore.lacys.com.lacysestore.clothes.kidsCatalog");
                         startActivity(intent);
                     }
                 }

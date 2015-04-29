@@ -1,5 +1,8 @@
-package estore.lacys.com.lacysestore;
+package estore.lacys.com.lacysestore.clothes;
 
+/**
+ * Created by Shaidi on 4/28/2015.
+ */
 import java.util.List;
 
 import android.app.Activity;
@@ -12,28 +15,32 @@ import android.widget.TextView;
 
 import estore.lacys.com.lacysestore.R;
 
-public class ItemDetailsActivity extends Activity {
+public class productDetails extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        /*
-        setContentView(R.layout.catalog);
+        setContentView(R.layout.item_details);
 
-        List<Catalog> catalog = CartHelper.getCatalog(getResources());
-        final List<Catalog> cart = CartHelper.getCart();
+        List<Catalog> catalog = mensHelper.getCatalog(getResources());
+        final List<Catalog> cart = mensHelper.getCart();
 
-        int productIndex = getIntent().getExtras().getInt(CartHelper.PRODUCT_INDEX);
+        int productIndex = getIntent().getExtras().getInt(mensHelper.PRODUCT_INDEX);
         final Catalog selectedProduct = catalog.get(productIndex);
 
         // Set the proper image and text
         ImageView productImageView = (ImageView) findViewById(R.id.itemImageView);
-        productImageView.setImageDrawable(selectedProduct.productImage);
+        productImageView.setImageDrawable(selectedProduct.getProductImage());
+
         TextView productTitleTextView = (TextView) findViewById(R.id.itemTitleView);
         productTitleTextView.setText(selectedProduct.title);
-        TextView productDetailsTextView = (TextView) findViewById(R.id.itemDescView);
-        productDetailsTextView.setText(selectedProduct.description);
+
+        TextView productDescView = (TextView) findViewById(R.id.itemDescView);
+        productDescView.setText(selectedProduct.description);
+
+        TextView productPriceTextView = (TextView) findViewById(R.id.dPriceView);
+        productPriceTextView.setText("$" + selectedProduct.price);
 
         Button addToCartButton = (Button) findViewById(R.id.ButtonAddToCart);
         addToCartButton.setOnClickListener(new OnClickListener() {
@@ -51,7 +58,7 @@ public class ItemDetailsActivity extends Activity {
         if(cart.contains(selectedProduct)) {
             addToCartButton.setEnabled(false);
             addToCartButton.setText("Item in Cart");
-        }*/
+        }
     }
 
 }
