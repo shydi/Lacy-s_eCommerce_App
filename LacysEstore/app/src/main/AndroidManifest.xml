@@ -37,7 +37,7 @@
         </activity>
         <activity
             android:name=".clothes.mensCatalog"
-            android:label="@string/mclothing" >
+            android:label="@string/mcatalog" >
             <intent-filter>
                 <action android:name="estore.lacys.com.lacysestore.clothes.mensCatalog" />
 
@@ -62,6 +62,30 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        //Cart
+        <activity
+            android:name=".clothes.CartActivity"
+            android:label="@string/cart" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.clothes.CartActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        //productDetails
+        <activity
+            android:name=".clothes.productDetails"
+            android:label="Product Details" >
+            <intent-filter>
+                <action android:name="estore.lacys.com.lacysestore.clothes.productDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        //Reviews
         <activity
             android:name=".mreviews.mdesignerhoodier"
             android:label="@string/title_activity_mdesignerhoodier" >
@@ -197,6 +221,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        //Login and Registration
         <activity
             android:name=".LogIn"
             android:label="@string/title_activity_log_in" >
@@ -215,6 +241,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        //Survey
         <activity
             android:name=".survey"
             android:label="@string/title_activity_survey" >

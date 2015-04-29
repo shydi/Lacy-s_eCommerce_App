@@ -91,6 +91,8 @@
     <string name="title_activity_log_in">Login</string>
     <string name="title_activity_sign_up">Sign Up</string>
     <string name="treview">Start typing review…</string>
+    <string name="Cart">Shopping Cart</string>
+    <string name="mcatalog">Men\'s Catalog</string>
 
     <string name="tfuser">Username…</string>
     <string name="tfpass">Password…</string>

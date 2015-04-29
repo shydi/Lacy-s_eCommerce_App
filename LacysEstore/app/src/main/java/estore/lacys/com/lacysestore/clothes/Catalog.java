@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
  */
 public class Catalog {
     public String title;
-    public Drawable productImage;
+    private Drawable productImage;
     public String description;
     public double price;
     public boolean selected;
@@ -16,8 +16,16 @@ public class Catalog {
                    double price)
     {
         this.title = title;
-        this.productImage = productImage;
+        this.setProductImage(productImage);
         this.description = description;
         this.price = price;
+    }
+
+    public Drawable getProductImage() {
+        return productImage;
+    }
+
+    public void setProductImage(Drawable productImage) {
+        this.productImage = productImage;
     }
 }

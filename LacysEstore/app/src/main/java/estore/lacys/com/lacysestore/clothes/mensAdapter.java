@@ -1,17 +1,12 @@
 package estore.lacys.com.lacysestore.clothes;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -28,19 +23,8 @@ public class mensAdapter extends BaseAdapter
     private List<Catalog> products;
     private boolean mShowCheckbox;
 
-
-    // View lookup cache
-    private static class ViewHolder {
-        ImageView tbn;
-        TextView name;
-        TextView desc;
-        TextView price;
-        CheckBox ckbx;
-    }
-
     public mensAdapter(List<Catalog>mList, LayoutInflater inflater, boolean showCheckbox)
     {
-
         products = mList;
         mInflater = inflater;
         mShowCheckbox = showCheckbox;
@@ -66,17 +50,15 @@ public class mensAdapter extends BaseAdapter
         final ViewItem item;
 
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.item,
-                    null);
+            convertView = mInflater.inflate(R.layout.item,null);
             item = new ViewItem();
 
-            item.productImageView = (ImageView) convertView
-                    .findViewById(R.id.itemImageView);
+            item.productImageView = (ImageView) convertView.findViewById(R.id.ImageViewItem);
 
-            item.productTitle = (TextView) convertView.findViewById(R.id.itemTitleView);
+            item.productTitle = (TextView) convertView.findViewById(R.id.TextViewItem);
             item.productPrice = (TextView) convertView.findViewById(R.id.priceView);
 
-            item.mCheckBox = (CheckBox) convertView.findViewById(R.id.checkbox);
+            item.mCheckBox = (CheckBox) convertView.findViewById(R.id.CheckBoxSelected);
 
             convertView.setTag(item);
         } else {
@@ -85,7 +67,7 @@ public class mensAdapter extends BaseAdapter
 
         Catalog curProduct = products.get(position);
 
-        item.productImageView.setImageDrawable(curProduct.productImage);
+        item.productImageView.setImageDrawable(curProduct.getProductImage());
         item.productTitle.setText(curProduct.title);
 
         if(!mShowCheckbox) {
