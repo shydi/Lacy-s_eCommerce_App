@@ -6,6 +6,9 @@
     <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:textColor="#000000"
         android:textSize="24dip" android:layout_margin="5dip" android:text="Shopping Cart"/>
+    <TextView android:layout_height="wrap_content" android:id="@+id/TextViewSubtotal"
+        android:layout_width="fill_parent" android:layout_margin="5dip"
+        android:textColor="#000000" android:text="Subtotal" android:textStyle="bold"/>
     <ListView android:layout_height="wrap_content"
         android:layout_weight="1" android:id="@+id/ListViewCatalog"
         android:layout_width="fill_parent" android:background="#ffffff"
@@ -23,7 +26,7 @@
         android:layout_height="wrap_content" android:id="@+id/ButtonRemoveFromCart"
         android:text="Remove from Cart" />
 
-    <Button android:id="@+id/Button02" android:layout_width="wrap_content"
+    <Button android:id="@+id/checkoutBtn" android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:text="Proceed to Checkout"/>
    </LinearLayout>
 </LinearLayout>

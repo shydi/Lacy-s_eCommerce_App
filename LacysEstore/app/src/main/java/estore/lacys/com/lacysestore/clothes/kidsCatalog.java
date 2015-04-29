@@ -24,9 +24,9 @@ import estore.lacys.com.lacysestore.LacysEstore;
 import estore.lacys.com.lacysestore.R;
 import estore.lacys.com.lacysestore.clothes.Catalog;
 
-public class mensCatalog extends Activity
+public class kidsCatalog extends Activity
 {
-    private List<Catalog> mProductList;
+    private List<Catalog> kProductList;
     private static Button button_mclothesreturn,button_login;
     /** Called when the activity is first created. */
     @Override
@@ -36,19 +36,19 @@ public class mensCatalog extends Activity
         setContentView(R.layout.catalog);
 
         // Obtain a reference to the product catalog
-        mProductList = mensHelper.getCatalog(getResources());
+        kProductList = kidsHelper.getCatalog(getResources());
 
         // Create the list
         ListView listViewCatalog = (ListView) findViewById(R.id.ListViewCatalog);
-        listViewCatalog.setAdapter(new mensAdapter(mProductList, getLayoutInflater(), false));
+        listViewCatalog.setAdapter(new mensAdapter(kProductList, getLayoutInflater(), false));
 
         listViewCatalog.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                Intent productDetailsIntent = new Intent("estore.lacys.com.lacysestore.clothes.productDetails");
-                productDetailsIntent.putExtra(mensHelper.PRODUCT_INDEX, position);
+                Intent productDetailsIntent = new Intent("estore.lacys.com.lacysestore.clothes.kidsDetails");
+                productDetailsIntent.putExtra(kidsHelper.PRODUCT_INDEX, position);
                 startActivity(productDetailsIntent);
             }
         });

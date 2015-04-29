@@ -16,14 +16,14 @@ import estore.lacys.com.lacysestore.R;
 /**
  * Created by Shaidi on 4/27/2015.
  */
-public class mensAdapter extends BaseAdapter
+public class kidsAdapter extends BaseAdapter
 {
     private LacysEstore context;
     private LayoutInflater mInflater;
     private List<Catalog> products;
     private boolean mShowCheckbox;
 
-    public mensAdapter(List<Catalog>mList, LayoutInflater inflater, boolean showCheckbox)
+    public kidsAdapter(List<Catalog>mList, LayoutInflater inflater, boolean showCheckbox)
     {
         products = mList;
         mInflater = inflater;

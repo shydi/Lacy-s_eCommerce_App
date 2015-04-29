@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import estore.lacys.com.lacysestore.R;
 
-public class productDetails extends Activity {
+public class womensDetails extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +23,10 @@ public class productDetails extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_details);
 
-        List<Catalog> catalog = mensHelper.getCatalog(getResources());
-        final List<Catalog> cart = mensHelper.getCart();
+        List<Catalog> catalog = womensHelper.getCatalog(getResources());
+        final List<Catalog> cart = womensHelper.getCart();
 
-        int productIndex = getIntent().getExtras().getInt(mensHelper.PRODUCT_INDEX);
+        int productIndex = getIntent().getExtras().getInt(womensHelper.PRODUCT_INDEX);
         final Catalog selectedProduct = catalog.get(productIndex);
 
         // Set the proper image and text
@@ -46,7 +46,8 @@ public class productDetails extends Activity {
         addToCartButton.setOnClickListener(new OnClickListener() {
 
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
 
 
                 cart.add(selectedProduct);
