@@ -55,7 +55,8 @@ public class survey extends ActionBarActivity {
                         writeToFile(ratingvalue);
                         Intent intent = new Intent("estore.lacys.com.lacysestore.mainpage");
                         startActivity(intent);
-                        Toast.makeText(getApplicationContext(), "Thank you! We will use this to better your experience in the future.",
+                        Toast.makeText(getApplicationContext(), "Thank you! We will use this to " +
+                                        "better your experience in the future.",
                                 Toast.LENGTH_SHORT).show();
                     }
                 }
