@@ -5,9 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -17,11 +21,13 @@ import estore.lacys.com.lacysestore.R;
 /**
  * Created by Shaidi on 4/27/2015.
  */
-public class mensAdapter extends ArrayAdapter<Catalog>
+public class mensAdapter extends BaseAdapter
 {
     private LacysEstore context;
+    private LayoutInflater mInflater;
     private List<Catalog> products;
-    private ListView list;
+    private boolean mShowCheckbox;
+
 
     // View lookup cache
     private static class ViewHolder {
@@ -29,39 +35,77 @@ public class mensAdapter extends ArrayAdapter<Catalog>
         TextView name;
         TextView desc;
         TextView price;
+        CheckBox ckbx;
     }
 
-    public mensAdapter(LacysEstore context, List<Catalog> products) {
-        super(context, R.layout.item, products);
-        this.context = context;
-        this.products = products;
+    public mensAdapter(List<Catalog>mList, LayoutInflater inflater, boolean showCheckbox)
+    {
+
+        products = mList;
+        mInflater = inflater;
+        mShowCheckbox = showCheckbox;
+    }
+
+    @Override
+    public int getCount() {
+        return products.size();
+    }
+
+    @Override
+    public Catalog getItem(int position) {
+        return products.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // Get the data item for this position
-        Catalog item = getItem(position);
-        // Check if an existing view is being reused, otherwise inflate the view
-        ViewHolder viewHolder; // view lookup cache stored in tag
+        final ViewItem item;
+
         if (convertView == null) {
-            viewHolder = new ViewHolder();
-            LayoutInflater inflater = LayoutInflater.from(getContext());
-            convertView = inflater.inflate(R.layout.item, parent, false);
-            viewHolder.name = (TextView) convertView.findViewById(R.id.itemTitleView);
-            viewHolder.price = (TextView) convertView.findViewById(R.id.priceView);
-            viewHolder.tbn = (ImageView) convertView.findViewById(R.id.itemImageView);
+            convertView = mInflater.inflate(R.layout.item,
+                    null);
+            item = new ViewItem();
 
-            convertView.setTag(viewHolder);
+            item.productImageView = (ImageView) convertView
+                    .findViewById(R.id.itemImageView);
+
+            item.productTitle = (TextView) convertView.findViewById(R.id.itemTitleView);
+            item.productPrice = (TextView) convertView.findViewById(R.id.priceView);
+
+            item.mCheckBox = (CheckBox) convertView.findViewById(R.id.checkbox);
+
+            convertView.setTag(item);
         } else {
-            viewHolder = (ViewHolder) convertView.getTag();
+            item = (ViewItem) convertView.getTag();
         }
-        // Populate the data into the template view using the data object
-        String textPrice = Double.toString(item.price);
-        viewHolder.name.setText(item.title);
-        viewHolder.price.setText(textPrice);
-        viewHolder.tbn.setImageDrawable(item.productImage);
 
-        // Return the completed view to render on screen
+        Catalog curProduct = products.get(position);
+
+        item.productImageView.setImageDrawable(curProduct.productImage);
+        item.productTitle.setText(curProduct.title);
+
+        if(!mShowCheckbox) {
+            item.mCheckBox.setVisibility(View.GONE);
+        } else {
+            if(curProduct.selected == true)
+                item.mCheckBox.setChecked(true);
+            else
+                item.mCheckBox.setChecked(false);
+        }
+
+
         return convertView;
+    }
+
+    private class ViewItem
+    {
+        ImageView productImageView;
+        TextView productTitle;
+        TextView productPrice;
+        CheckBox mCheckBox;
     }
 }
